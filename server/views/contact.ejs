@@ -1,0 +1,48 @@
+<%- include partials/header.ejs %> 
+
+<%- include partials/main_nav.ejs %> 
+
+  <!-- Main Content -->
+  <main class="container">
+    <!-- Contact ways -->
+    <div class="contact_contents">
+      <p>
+        <a href="tel:647-979-9882">Phone: 647-979- 9882 </a>
+        <br>
+        <br>
+        <br>
+        <a href="mailto: klee246@my.centennialcollege.ca">Email: klee246@my.centennialcollege.ca</a>
+        <br>
+        <br>
+        <br>
+        <a href="https://www.google.com/maps/place/202+McKee+Ave,+North+York,+ON+M2N+4C8/@43.7759879,-79.4032275,17z/data=!3m1!4b1!4m5!3m4!1s0x882b2d3fb0be3bbb:0x6aaffc729ac0c260!8m2!3d43.7759879!4d-79.4010388"
+            target="_blank">
+            Address: 202 Mckee Ave, North York, Ontario, Canada</a>
+        <br>
+        <br>
+        <br>
+        <h2 id="click_hint">Just click it which you prefer contact way :)</h2>
+      </p>
+    </div>
+    <!-- Contact ways -->
+    <!-- Contact infomation -->
+    <div class="contact_input">
+        <form action="/home">
+          <input type="text" placeholder="First Name" name="first">
+          <input type="text" placeholder="Last Name" name="last">
+          <br>
+          <input type="text" placeholder="Phone Number" name="phone">
+          <input type="text" placeholder="Email Address" name="email">
+          <br>
+          <textarea placeholder=" Please enter your message" name="message" id="message" cols="30" rows="10"></textarea>
+          <br>
+          <input id="sub_button" type="submit" value="send">
+        </form>
+    </div>
+    <!-- Contact infomation -->
+  </main>
+  <!-- Main Content -->
+
+<%- include partials/bottom_nav.ejs %> 
+
+<%- include partials/footer.ejs %>

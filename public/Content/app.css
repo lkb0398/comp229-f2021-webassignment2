@@ -1,0 +1,173 @@
+/* 
+FileName: app.css
+Name: kyeongbeom Lee
+StudentNumber: 301083034 
+Date: Sep 30, 2021.
+*/
+
+/* Custom css goes here. */
+/*
+.container {
+    background-image: url("/assets/images/intro.jpg");
+    font-size: 16px;
+    color: white;
+    min-width: 1519px;
+    min-height: 1000px;
+    padding: 100px 0px 0px 30px;
+}
+*/
+@media (min-width: 980px) {
+    .container {
+        background-image: url("/Assets/images/intro.jpg");
+        font-size: 16px;
+        color: white;
+        max-width: 1519px;
+        min-height: 1000px;
+        padding: 100px 0px 0px 30px;
+        
+    }
+}
+
+@media (max-width: 1519px) {
+    .container {
+        background-image: url("/Assets/images/intro.jpg");
+        font-size: 16px;
+        color: white;
+        max-width: 1519px;
+        min-height: 1000px;
+        padding: 100px 0px 0px 30px;
+    }
+}
+
+.intro_text {
+    font-size: 15px;
+    text-align: center;
+    padding-top: 300px;
+}
+
+.intro_text > span {
+    font-size: 35px;
+}
+
+.profile_pic {
+    width: 250px;
+    height: 320px;;
+}
+
+.about_contents {
+    float: right;
+    width: 83%;
+    padding-left: 15px;
+}
+
+.cont_t {
+    line-height: 190%;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.cont_b {
+    line-height: 160%;
+    padding-top: 90px;
+}
+
+.cont_b > div {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.project_contents {
+    width: 800px;
+}
+
+.project_contents > div {
+    display: flex;
+    width: auto;
+    height: 150px;
+    margin-top: 50px;
+    margin-left: 30px;
+    vertical-align: middle;
+}
+
+.project_contents > div > p {
+    margin: auto 30px auto 30px;    
+}
+
+.section {
+    width: 250px;
+    height: 150px;
+}
+
+.section > img {
+    width: 250px;
+    height: 150px;
+}
+
+.services_content > ul > li {
+    width: 19%;
+    display: inline-block;
+    text-align: center;
+}
+
+.services_content > ul > li > img {
+    width: 150px;
+    height: 120px;
+    padding: 45px;
+    padding-bottom: 0px;
+}
+
+.contact_contents {
+    width: auto;
+    height: 300px;
+    /*margin-top: 100px;*/
+    margin-left: 100px;
+}
+
+.contact_contents > p > a {
+    font-size: 20px;
+    text-decoration: none;
+    color: wheat;
+}
+
+#click_hint {
+    font-size: 40px;
+    color:gray;
+}
+
+.contact_input {
+    width: auto;
+    height: 400px;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+.contact_input > form > input {
+    width: 240px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.0);
+    margin: 10px;
+    border: 1;
+    color: white;
+    border-radius: 5px;
+}
+
+.contact_input > form > textarea {
+    width: 510px;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    border: 1;
+    color: white;
+    border-radius: 5px;
+}
+
+#sub_button {
+    width: 70px;
+}
+
+.text-center {
+    color: white;
+}
+
+.table {
+    background-color: gray;
+}
