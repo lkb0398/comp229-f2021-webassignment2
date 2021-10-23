@@ -4,7 +4,7 @@ let mongoose = require('mongoose');
 
 let jwt = require('jsonwebtoken');
 
-//Create a reference to the Schema.
+//Create a reference to the Models.
 let Book = require('../models/book');
 
 module.exports.displayBookList = (req, res, next) => {
