@@ -2,6 +2,8 @@ let express = require('express');
 let router = express.Router();
 let mongoose = require('mongoose');
 
+let jwt = require('jsonwebtoken');
+
 //Create a reference to the Schema.
 let Book = require('../models/book');
 
