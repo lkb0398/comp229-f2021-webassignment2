@@ -5,39 +5,28 @@
         <!-- Cotent for the Add page -->
         <div class="container">
             <div class="row">
-                <div class="col-md-offset-1 col-md-7"></div>
+                <div class="col-md-offset-1 col-md-6"></div>
                 <h1>
                     <%= title %>
                 </h1>
 
                 <form class="form" method="POST">
                     <div class="form-group">
-                        <label for="nameTextField">Book Title</label>
-                        <input type="text" class="form-control" id="nameTextField" placeholder="Enter the Book Title"
+                        <label for="nameTextField">Name</label>
+                        <input type="text" class="form-control" id="nameTextField" placeholder="Enter your Name"
                             name="name" style="width: 50%" required>
                     </div>
 
                     <div class="form-group">
-                        <label for="authorTextField">Author</label>
-                        <input type="text" class="form-control" id="authorTextField" placeholder="Enter the Author"
-                            name="author" style="width: 50%" required>
+                        <label for="emailTextField">Email</label>
+                        <input type="text" class="form-control" id="emailTextField" placeholder="Enter your Email"
+                            name="email" style="width: 50%" required>
                     </div>
 
                     <div class="form-group">
-                        <label for="publishedTextField">Year</label>
-                        <input type="text" class="form-control" id="publishedTextField"
-                            placeholder="Enter the year of Publication" name="published" style="width: 50%" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="descriptionTextField">Description</label>
-                        <textarea type="text" class="form-control" id="descriptionTextField"
-                            placeholder="Enter the Description" name="description" style="width: 50%" required></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="priceTextField">Price</label>
-                        <input type="text" class="form-control" id="priceTextField" placeholder="Enter the price"
-                            name="price" style="width: 50%" required>
+                        <label for="phoneTextField">Phone</label>
+                        <input type="number" class="form-control" id="phoneTextField"
+                            placeholder="Enter your Phone Number" name="phone" style="width: 50%" required>
                     </div>
                     <button class="btn btn-primary" type="submit">
                         <i class="fas fa-edit"></i> Submit</button>

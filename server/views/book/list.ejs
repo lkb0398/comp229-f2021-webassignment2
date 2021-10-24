@@ -5,80 +5,50 @@
         <!-- Main Content -->
         <main class="container">
             <div class="row">
-                <div class="col-md-offset-3 col-md-7">
+                <div class="col-md-offset-1 col-md-6">
                     <h1><%= title %></h1>
                     <% if(typeof displayName=='string' && displayName) { %>
                         <a href="/book-list/add" class="btn btn-primary" role="button">
-                        <i class="fas fa-plus-circle"></i> Add a Book</a>
+                        <i class="fas fa-plus-circle"></i> Add a Business Contact</a>
                     <% } %>
                     <br>
-                    <table class="table table-bordered table-striped table-hover">
+                    <table class="table table-dark table-hover">
                         <!-- Header Row-->
                         <tr class="d-flex">
                         <% if(typeof displayName=='string' && displayName) { %>
-                            <th class="text-center col-2">Title</th>
-                            <th class="text-center col-2">Author</th>
-                            <th class="text-center col-1">Year</th>
-                            <th class="col-4">Description</th>
-                            <th class="text-center col-1">Price</th>
-                            <th class="text-center col-1"></th>
-                            <th class="text-center col-1"></th>
-                        <% } else { %>
-                            <th class="text-center col-2">Title</th>
-                            <th class="text-center col-2">Author</th>
-                            <th class="text-center col-1">Year</th>
-                            <th class="col-6">Description</th>
-                            <th class="text-center col-1">Price</th>
+                            <th class="text-center col-4">Name</th>
+                            <th class="text-center col-4">Email Address</th>
+                            <th class="text-center col-4">Phone Number</th>
                         <% } %>
                         </tr>
-                            
                         <!-- Repeatable Template Row -->
-                    <% for(let count=0; count < BookList.length; count++) { %>
+                    <% if(typeof displayName=='string' && displayName) { %>
+                      <% for(let count=0; count < BookList.length; count++) { %>
                         <tr class="d-flex">
-                        <% if(typeof displayName=='string' && displayName) { %>
-                            <td class="text-center col-2">
+                       
+                            <td class="text-center col-4">
                                 <%= BookList[count].name %>
                             </td>
-                            <td class="text-center col-2">
-                                <%= BookList[count].author %>
+                            <td class="text-center col-4">
+                                <%= BookList[count].email %>
                             </td>
-                            <td class="text-center col-1">
-                                <%= BookList[count].published %>
+                            <td class="text-center col-4">
+                                <%= BookList[count].phone %>
                             </td>
-                            <td class="col-4">
-                                <%= BookList[count].description %>
-                            </td>
-                            <td class="text-center col-1">
-                                <%= BookList[count].price %>
-                            </td>
-                            <td class="text-center col-1">
+                            <td class="text-center col-1.5">
                                 <a href="/book-list/edit/<%= BookList[count]._id %>"
                                     class="btn btn-primary btn-sm">
-                                    <i class="fas fa-pencil-alt"></i> Edit</a>
+                                    <i class="fas fa-sm fa-pencil-alt"></i> Update</a>
                             </td>
-                            <td class="text-center col-1">
+                            <td class="text-center col-1.5">
                                 <a href="/book-list/delete/<%= BookList[count]._id %>"
                                 class="btn btn-danger btn-sm">
-                                <i class="fas fa-trash-alt"></i> Delete</a>
+                                <i class="fas fa-sm fa-trash-alt"></i> Delete</a>
                             </td>
-                            <% } else { %>
-                            <td class="text-center col-2">
-                                <%= BookList[count].name %>
-                            </td>
-                            <td class="text-center col-2">
-                                <%= BookList[count].author %>
-                            </td>
-                            <td class="text-center col-1">
-                                <%= BookList[count].published %>
-                            </td>
-                            <td class="col-6">
-                                <%= BookList[count].description %>
-                            </td>
-                            <td class="text-center col-1">
-                                <%= BookList[count].price %>
-                            </td>
-                        <% } %>
                         </tr>
+                            <% } %>
+                    <% } else { %>
+                        <h1>Please, Login first.</h1>
                     <% } %>
                 </table>
             </div>
